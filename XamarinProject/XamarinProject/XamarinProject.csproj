@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -18,6 +18,7 @@
     <None Remove="Images\logout.png" />
     <None Remove="Images\search.png" />
     <None Remove="Images\student.png" />
+    <None Remove="Images\studentuni.png" />
     <None Remove="logo.png" />
   </ItemGroup>
 
@@ -35,6 +36,7 @@
     <EmbeddedResource Include="Images\logout.png" />
     <EmbeddedResource Include="Images\search.png" />
     <EmbeddedResource Include="Images\student.png" />
+    <EmbeddedResource Include="Images\studentuni.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -44,6 +46,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="addStudent.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="createAccount.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

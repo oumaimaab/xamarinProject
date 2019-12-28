@@ -24,7 +24,7 @@
                         
                     </StackLayout>
                     <StackLayout >
-                        <Button x:Name="ButtonLabel"  Text="Absence" StyleClass="home" />
+                        <Button x:Name="ButtonLabel"  Text="Absence" StyleClass="home"  Clicked="absence"/>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" Spacing="5"  Padding="8,8,8,8"  BackgroundColor="#F1F3F6">
@@ -40,7 +40,7 @@
 
                     </StackLayout>
                     <StackLayout >
-                        <Button Text="Add new student" StyleClass="home" />
+                        <Button Text="Add new student" StyleClass="home" Clicked="student"/>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal" Spacing="5"  Padding="8,8,8,8"  BackgroundColor="#F1F3F6">
@@ -56,7 +56,7 @@
 
                     </StackLayout>
                     <StackLayout >
-                        <Button   Text="Add new lesson" StyleClass="home" />
+                        <Button   Text="Add new lesson" StyleClass="home" Clicked="lesson"/>
                     </StackLayout>
                 </StackLayout>
             </StackLayout>
@@ -73,7 +73,7 @@
 
                     </StackLayout>
                     <StackLayout >
-                        <Button   Text="Search" StyleClass="home" />
+                        <Button   Text="Search" StyleClass="home" Clicked="search"/>
                     </StackLayout>
             </StackLayout>
             <StackLayout Orientation="Horizontal" Spacing="5"  Padding="8,8,8,8"  BackgroundColor="#F1F3F6">
@@ -89,7 +89,7 @@
 
                 </StackLayout>
                 <StackLayout >
-                    <Button   Text="Logout" StyleClass="home" />
+                    <Button   Text="Logout" StyleClass="home" Clicked="logout"/>
                 </StackLayout>
             </StackLayout>
         </StackLayout>
