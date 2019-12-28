@@ -25,7 +25,7 @@
             <Label StyleClass="form" Text="Password"/>
             <Entry IsPassword="True" Placeholder="Password" StyleClass="ent"/>
             <Button Text="Log in" StyleClass="btn2" Clicked="Button_Clicked_1"/>
-            <Label StyleClass="link" Text=" You don't have an account ? Sign up"/>
+            <Label x:Name="sign" StyleClass="link" Text=" You don't have an account ? Sign up"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

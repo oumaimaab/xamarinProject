@@ -17,6 +17,7 @@ namespace XamarinProject
         public loginView()
         {
             InitializeComponent();
+            labelClicked();
         }
 
         async private void Button_Clicked(object sender, EventArgs e)
@@ -27,6 +28,16 @@ namespace XamarinProject
         async private void Button_Clicked_1(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Home());
+        }
+        void labelClicked()
+        {
+            sign.GestureRecognizers.Add(new TapGestureRecognizer()
+            {
+                Command = new Command(async () =>
+                {
+                    await Navigation.PushAsync(new createAccount());
+                })
+            });
         }
     }
 }

@@ -24,9 +24,9 @@ namespace XamarinProject
             await Navigation.PushAsync(new loginView());
         }
 
-        private void Button_Clicked_1(object sender, EventArgs e)
+        async private void Button_Clicked_1(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new createAccount());
         }
     }
 }
