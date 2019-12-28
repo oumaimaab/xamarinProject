@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ic="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin" 
+             xmlns:local="clr-namespace:XamarinProject.MarkupExtentions"
+             mc:Ignorable="d"
+             x:Class="XamarinProject.Home">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Home" StyleClass="welcome"/>
+            <StackLayout VerticalOptions="Start">
+                <StackLayout Orientation="Horizontal" Spacing="5"  Padding="8,8,8,8"  BackgroundColor="#F1F3F6">
+                    <StackLayout HorizontalOptions="StartAndExpand">
+                        <ic:CircleImage
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        Aspect="AspectFit"
+                        HorizontalOptions="Center"
+                        BorderColor="Black"
+                        BorderThickness="2"
+                         Source="{local:EmbededImage ResourceId=XamarinProject.Images.checklist.png}"/>
+                        
+                    </StackLayout>
+                    <StackLayout >
+                        <Button x:Name="ButtonLabel"  Text="Absence" StyleClass="home" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="5"  Padding="8,8,8,8"  BackgroundColor="#F1F3F6">
+                    <StackLayout HorizontalOptions="StartAndExpand" >
+                        <ic:CircleImage
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        Aspect="AspectFit"
+                        HorizontalOptions="Center"
+                        BorderColor="Black"
+                        BorderThickness="2"
+                         Source="{local:EmbededImage ResourceId=XamarinProject.Images.student.png}"/>
+
+                    </StackLayout>
+                    <StackLayout >
+                        <Button Text="Add new student" StyleClass="home" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Spacing="5"  Padding="8,8,8,8"  BackgroundColor="#F1F3F6">
+                    <StackLayout HorizontalOptions="StartAndExpand">
+                        <ic:CircleImage
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        Aspect="AspectFit"
+                        HorizontalOptions="Center"
+                        BorderColor="Black"
+                        BorderThickness="2"
+                         Source="{local:EmbededImage ResourceId=XamarinProject.Images.book.png}"/>
+
+                    </StackLayout>
+                    <StackLayout >
+                        <Button   Text="Add new lesson" StyleClass="home" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="5"  Padding="8,8,8,8"  BackgroundColor="#F1F3F6">
+                    <StackLayout HorizontalOptions="StartAndExpand">
+                        <ic:CircleImage
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        Aspect="AspectFit"
+                        HorizontalOptions="Center"
+                        BorderColor="Black"
+                        BorderThickness="2"
+                         Source="{local:EmbededImage ResourceId=XamarinProject.Images.search.png}"/>
+
+                    </StackLayout>
+                    <StackLayout >
+                        <Button   Text="Search" StyleClass="home" />
+                    </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Spacing="5"  Padding="8,8,8,8"  BackgroundColor="#F1F3F6">
+                <StackLayout HorizontalOptions="StartAndExpand">
+                    <ic:CircleImage
+                        WidthRequest="80"
+                        HeightRequest="80"
+                        Aspect="AspectFit"
+                        HorizontalOptions="Center"
+                        BorderColor="Black"
+                        BorderThickness="2"
+                         Source="{local:EmbededImage ResourceId=XamarinProject.Images.logout.png}"/>
+
+                </StackLayout>
+                <StackLayout >
+                    <Button   Text="Logout" StyleClass="home" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

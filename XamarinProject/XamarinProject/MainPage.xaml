@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamarinProject.MarkupExtentions"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:markupextentions="clr-namespace:XamarinProject.MarkupExtentions"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.BackButtonTitle="false"
+             x:Class="XamarinProject.MainPage">
+    
+    <StackLayout>
+
+        <!-- Place new controls here -->
+        
+        <Label Text="CHECK IT" StyleClass="title"/>
+
+        <Image StyleClass="logo" Source="{local:EmbededImage ResourceId=XamarinProject.Images.logo.png}"></Image>
+        <Label Text="Check up is an app that will help you track students attendancy." StyleClass="desc"/>
+        <Button Text="Let's Start" StyleClass="btn2" Clicked="Button_Clicked"/>
+        <Button Text="Create my account" StyleClass="btn2" Clicked="Button_Clicked_1"/>
+
+
+    </StackLayout>
+    
+
+</ContentPage>
