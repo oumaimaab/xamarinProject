@@ -38,6 +38,75 @@
           "build/Microsoft.NetFramework.Analyzers.props": {}
         }
       },
+      "Plugin.Toast/2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid10/Plugin.Toast.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Toast.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Plugin.Toast.Abstractions.dll": {},
+          "lib/MonoAndroid10/Plugin.Toast.dll": {}
+        }
+      },
+      "sqlite-net-pcl/1.6.292": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.bundle_green": "1.1.13"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.13": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.13",
+          "SQLitePCLRaw.lib.e_sqlite3.android": "1.1.13",
+          "SQLitePCLRaw.provider.e_sqlite3.android": "1.1.13"
+        },
+        "compile": {
+          "lib/MonoAndroid/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SQLitePCLRaw.batteries_green.dll": {},
+          "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll": {}
+        }
+      },
+      "SQLitePCLRaw.core/1.1.13": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid/SQLitePCLRaw.core.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SQLitePCLRaw.core.dll": {}
+        }
+      },
+      "SQLitePCLRaw.lib.e_sqlite3.android/1.1.13": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid/SQLitePCLRaw.lib.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SQLitePCLRaw.lib.e_sqlite3.dll": {}
+        }
+      },
+      "SQLitePCLRaw.provider.e_sqlite3.android/1.1.13": {
+        "type": "package",
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.13"
+        },
+        "compile": {
+          "lib/MonoAndroid/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/SQLitePCLRaw.provider.e_sqlite3.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -45,6 +114,20 @@
         },
         "runtime": {
           "lib/MonoAndroid10/_._": {}
+        }
+      },
+      "Toasts.Forms.Plugin/3.3.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v7.AppCompat": "23.3.0"
+        },
+        "compile": {
+          "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.dll": {},
+          "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.dll": {}
         }
       },
       "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
@@ -855,9 +938,12 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Plugin.Toast": "2.1.2",
+          "Toasts.Forms.Plugin": "3.3.2",
           "Xam.Plugins.Forms.ImageCircle": "3.0.0.5",
           "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.3.0.908675"
+          "Xamarin.Forms": "4.3.0.908675",
+          "sqlite-net-pcl": "1.6.292"
         },
         "compile": {
           "bin/placeholder/XamarinProject.dll": {}
@@ -1262,6 +1348,152 @@
         "tools/uninstall.ps1"
       ]
     },
+    "Plugin.Toast/2.1.2": {
+      "sha512": "MwEte2uS1vm49Gov+CigJaaxK8f5fFTeWAzcrpbIKvctiN0zAjhjV8cwmRK0A2SetjkhnrL08/vILnN9p5WEqg==",
+      "type": "package",
+      "path": "plugin.toast/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10/Plugin.Toast.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Toast.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Toast.dll",
+        "lib/MonoAndroid10/Plugin.Toast.dll.mdb",
+        "lib/MonoAndroid10/Plugin.Toast.pdb",
+        "lib/MonoAndroid10/Plugin.Toast.xml",
+        "lib/UAP10/Plugin.Toast.Abstractions.dll",
+        "lib/UAP10/Plugin.Toast.Abstractions.pdb",
+        "lib/UAP10/Plugin.Toast.dll",
+        "lib/UAP10/Plugin.Toast.pdb",
+        "lib/UAP10/Plugin.Toast.pri",
+        "lib/Xamarin.iOS10/Plugin.Toast.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Toast.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Toast.dll",
+        "lib/Xamarin.iOS10/Plugin.Toast.pdb",
+        "lib/Xamarin.iOS10/Plugin.Toast.xml",
+        "lib/netstandard/Plugin.Toast.Abstractions.dll",
+        "lib/netstandard/Plugin.Toast.Abstractions.pdb",
+        "lib/netstandard/Plugin.Toast.deps.json",
+        "lib/netstandard/Plugin.Toast.dll",
+        "lib/netstandard/Plugin.Toast.pdb",
+        "plugin.toast.2.1.2.nupkg.sha512",
+        "plugin.toast.nuspec"
+      ]
+    },
+    "sqlite-net-pcl/1.6.292": {
+      "sha512": "TZPs206/ZZXhDAgCzxE5Dmw1enkRmtpd1RKt+dLJA6Kvml4RxwkasRs4js2kijtGxik1SLCs39rh9nl9YFwrYg==",
+      "type": "package",
+      "path": "sqlite-net-pcl/1.6.292",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/SQLite-net.deps.json",
+        "lib/netstandard1.1/SQLite-net.dll",
+        "lib/netstandard1.1/SQLite-net.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLite-net.xml",
+        "sqlite-net-pcl.1.6.292.nupkg.sha512",
+        "sqlite-net-pcl.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.bundle_green/1.1.13": {
+      "sha512": "E0Hm/XTfleE/LlrRZVucB1dQqDlIDPgqvkFymbGqMO7bSaoB6R2X5Cgzq/RDxBFSzHjpzet2Tp5Kar8faLSZ+Q==",
+      "type": "package",
+      "path": "sqlitepclraw.bundle_green/1.1.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/wp8/SQLitePCLRaw.bundle_green.targets",
+        "build/wp80/arm/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/arm/SQLitePCLRaw.batteries_v2.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_green.dll",
+        "build/wp80/x86/SQLitePCLRaw.batteries_v2.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_green.dll",
+        "lib/MonoAndroid/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.batteries_v2.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net35/SQLitePCLRaw.batteries_green.dll",
+        "lib/net35/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net40/SQLitePCLRaw.batteries_green.dll",
+        "lib/net40/SQLitePCLRaw.batteries_v2.dll",
+        "lib/net45/SQLitePCLRaw.batteries_green.dll",
+        "lib/net45/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_green.dll",
+        "lib/netcoreapp/SQLitePCLRaw.batteries_v2.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_green.dll",
+        "lib/uap10.0/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win8/SQLitePCLRaw.batteries_green.dll",
+        "lib/win8/SQLitePCLRaw.batteries_v2.dll",
+        "lib/win81/SQLitePCLRaw.batteries_green.dll",
+        "lib/win81/SQLitePCLRaw.batteries_v2.dll",
+        "lib/wp8/_._",
+        "lib/wpa81/SQLitePCLRaw.batteries_green.dll",
+        "lib/wpa81/SQLitePCLRaw.batteries_v2.dll",
+        "sqlitepclraw.bundle_green.1.1.13.nupkg.sha512",
+        "sqlitepclraw.bundle_green.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.core/1.1.13": {
+      "sha512": "I8Q9qL1urPegoyZ5uI32lgqsxl8aPRZAyVBJbO+0T/zlGz/LBc8vhRVyDyCOU9LWWpV8dYpT0nCpuLv1ua6zkA==",
+      "type": "package",
+      "path": "sqlitepclraw.core/1.1.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.Mac20/SQLitePCLRaw.core.dll",
+        "lib/Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/net35/SQLitePCLRaw.core.dll",
+        "lib/net40/SQLitePCLRaw.core.dll",
+        "lib/net45/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.0/SQLitePCLRaw.core.dll",
+        "lib/netstandard1.1/SQLitePCLRaw.core.dll",
+        "lib/portable-net40+sl5+netcore45+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/SQLitePCLRaw.core.dll",
+        "lib/uap10.0/SQLitePCLRaw.core.dll",
+        "lib/win8/SQLitePCLRaw.core.dll",
+        "lib/win81/SQLitePCLRaw.core.dll",
+        "lib/wpa81/SQLitePCLRaw.core.dll",
+        "sqlitepclraw.core.1.1.13.nupkg.sha512",
+        "sqlitepclraw.core.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.lib.e_sqlite3.android/1.1.13": {
+      "sha512": "o3LDLwmrDsWmx4Ed0DgfxSzNQTaEHy7Od9VxBnIMqeunMMKC5ndKAQuaqiR9Bf/iwOH+Dnr/vV6O3Su0ecpFng==",
+      "type": "package",
+      "path": "sqlitepclraw.lib.e_sqlite3.android/1.1.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/SQLitePCLRaw.lib.e_sqlite3.dll",
+        "sqlitepclraw.lib.e_sqlite3.android.1.1.13.nupkg.sha512",
+        "sqlitepclraw.lib.e_sqlite3.android.nuspec"
+      ]
+    },
+    "SQLitePCLRaw.provider.e_sqlite3.android/1.1.13": {
+      "sha512": "1lXSBJAVBZ/bE3+B6NVd5GC3xaX196TgjhybCUwjd5cVgKt59UNw3SHWHanuUnHCO8zfRIVCxY+Xu/Im/thnuw==",
+      "type": "package",
+      "path": "sqlitepclraw.provider.e_sqlite3.android/1.1.13",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/SQLitePCLRaw.provider.e_sqlite3.dll",
+        "sqlitepclraw.provider.e_sqlite3.android.1.1.13.nupkg.sha512",
+        "sqlitepclraw.provider.e_sqlite3.android.nuspec"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -1307,6 +1539,30 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Toasts.Forms.Plugin/3.3.2": {
+      "sha512": "Cg+uc+GPV2rfGLYl/gyW7oo5YPPZ0/jG1Bj6KRihecoOy0Ju4HfKith9pd8CIXerS9DH7x8vqV5jrPaKXEGenA==",
+      "type": "package",
+      "path": "toasts.forms.plugin/3.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.dll",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.pdb",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll",
+        "lib/netstandard1.1/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/netstandard1.1/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll",
+        "lib/uap10.0/Toasts.Forms.Plugin.UWP.pdb",
+        "toasts.forms.plugin.3.3.2.nupkg.sha512",
+        "toasts.forms.plugin.nuspec"
       ]
     },
     "Xam.Plugins.Forms.ImageCircle/3.0.0.5": {
@@ -2394,9 +2650,12 @@
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
       "Microsoft.CodeAnalysis.FxCopAnalyzers >= 2.9.8",
+      "Plugin.Toast >= 2.1.2",
+      "Toasts.Forms.Plugin >= 3.3.2",
       "Xamarin.Essentials >= 1.3.1",
       "Xamarin.Forms >= 4.3.0.908675",
-      "XamarinProject >= 1.0.0"
+      "XamarinProject >= 1.0.0",
+      "sqlite-net-pcl >= 1.6.292"
     ]
   },
   "packageFolders": {
@@ -2447,6 +2706,14 @@
             "target": "Package",
             "version": "[2.9.8, )"
           },
+          "Plugin.Toast": {
+            "target": "Package",
+            "version": "[2.1.2, )"
+          },
+          "Toasts.Forms.Plugin": {
+            "target": "Package",
+            "version": "[3.3.2, )"
+          },
           "Xamarin.Essentials": {
             "target": "Package",
             "version": "[1.3.1, )"
@@ -2454,6 +2721,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.3.0.908675, )"
+          },
+          "sqlite-net-pcl": {
+            "target": "Package",
+            "version": "[1.6.292, )"
           }
         }
       }

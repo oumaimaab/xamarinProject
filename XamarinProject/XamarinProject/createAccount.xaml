@@ -20,12 +20,12 @@
                  Source="{local:EmbededImage ResourceId=XamarinProject.Images.login.png}"
                 />
             <Label StyleClass="form" Text="User name"/>
-            <Entry Keyboard="Text" Placeholder="User name" StyleClass="ent"/>
+            <Entry x:Name="usernameEntry" Keyboard="Text" Placeholder="User name" StyleClass="ent"/>
             <Label StyleClass="form" Text="Password"/>
-            <Entry IsPassword="True" Placeholder="Password" StyleClass="ent"/>
+            <Entry x:Name="passEntry" IsPassword="True" Placeholder="Password" StyleClass="ent"/>
             <Label StyleClass="form" Text="Confirm Password"/>
-            <Entry IsPassword="True" Placeholder="Confirm Password" StyleClass="ent"/>
-            <Button Text="Log in" StyleClass="btn2"/>
+            <Entry x:Name="confirmPassEntry" IsPassword="True" Placeholder="Confirm Password" StyleClass="ent"/>
+            <Button Text="Submit" StyleClass="btn2" Clicked="onAdd"/>
             <Label Text=" You have an account ? Log in" x:Name="login" HorizontalOptions="Center" TextColor=" #1F6EE3"/>
         </StackLayout>
     </ContentPage.Content>

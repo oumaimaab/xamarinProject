@@ -12,7 +12,7 @@ C:\Users\dell\source\repos\XamarinProject\XamarinProject\XamarinProject\obj\Debu
 C:\Users\dell\source\repos\XamarinProject\XamarinProject\XamarinProject\obj\Debug\netstandard2.0\XamarinProject.dll
 C:\Users\dell\source\repos\XamarinProject\XamarinProject\XamarinProject\obj\Debug\netstandard2.0\ref\XamarinProject.dll
 C:\Users\dell\source\repos\XamarinProject\XamarinProject\XamarinProject\obj\Debug\netstandard2.0\XamarinProject.pdb
-C:\Users\dell\source\repos\XamarinProject\XamarinProject\XamarinProject\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\dell\source\repos\XamarinProject\XamarinProject\XamarinProject\obj\Debug\netstandard2.0\home.xaml.g.cs
 C:\Users\dell\source\repos\XamarinProject\XamarinProject\XamarinProject\obj\Debug\netstandard2.0\createAccount.xaml.g.cs
 C:\Users\dell\source\repos\XamarinProject\XamarinProject\XamarinProject\obj\Debug\netstandard2.0\addStudent.xaml.g.cs
+C:\Users\dell\source\repos\XamarinProject\XamarinProject\XamarinProject\obj\Debug\netstandard2.0\XamlC.stamp
